@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Experimental WP CI" default="quality">
+
+    <target name="behat">
+        <exec executable="bin/behat" passthru="true" checkreturn="true"/>
+    </target>
+
+    <target name="test" depends="behat"/>
+
+</project>
+
