@@ -24,12 +24,22 @@
     "require": {
         "php": ">=5.3.0",
         "wordpress": "4.1",
-        "fancyguy/webroot-installer": "1.0.0"
+        "fancyguy/webroot-installer": "1.0.0",
+        "wdalmut/wordpress-extension": "*",
+        "phpunit/phpunit": "4.5.*",
+        "behat/behat": "2.5.*@stable",
+        "behat/mink": "1.4.*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
     },
     "extra": {
         "webroot-dir": "wp",
         "webroot-package": "wordpress"
     },
     "minimum-stability": "dev",
-    "license": "MIT"
+    "license": "MIT",
+    "config": {
+        "bin-dir": "bin/"
+    }
 }
