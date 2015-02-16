@@ -15,4 +15,4 @@ dependencies:
 
 test:
   override:
-    - docker run jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 /var/www/bin/behat /var/www/features --config /var/www/config/behat.yml
+    - docker run jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 behat
