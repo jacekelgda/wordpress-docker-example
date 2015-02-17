@@ -12,6 +12,7 @@ dependencies:
   post:
     - echo 'post change'
     - cp docker/Dockerfile Dockerfile
+    - cp .dockercfg ~/
     - docker build -t jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 .
 
 test:
