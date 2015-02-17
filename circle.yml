@@ -11,6 +11,7 @@ dependencies:
     - echo 'pre'
   post:
     - echo 'post'
+    - cp docker/Dockerfile Dockerfile
     - docker build -t jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 .
 
 test:
