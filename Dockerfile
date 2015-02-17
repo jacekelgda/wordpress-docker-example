@@ -36,6 +36,11 @@ RUN a2enmod rewrite
 
 RUN sed -i "s/;date.timezone =/date.timezone = Europe\/Warsaw/" /etc/php5/apache2/php.ini
 
+## install phing
+RUN apt-get install -y php-pear
+RUN pear channel-discover pear.phing.info
+RUN pear install phing/phing
+
 ### Composer
 
 RUN curl -sS https://getcomposer.org/installer | php

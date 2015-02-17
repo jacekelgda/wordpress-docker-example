@@ -15,4 +15,4 @@ dependencies:
 
 test:
   override:
-    - docker run jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 /var/www/bin/phing -find /var/www/build.xml behat
+    - docker run jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 phing -find /var/www/build.xml behat
