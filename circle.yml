@@ -10,7 +10,7 @@ dependencies:
   pre:
     - echo 'pre'
   post:
-    - echo 'post'
+    - echo 'post change'
     - cp docker/Dockerfile Dockerfile
     - docker build -t jacekelgda/wordpress-docker-example:$CIRCLE_SHA1 .
 
