@@ -8,7 +8,6 @@ machine:
 
 dependencies:
   post:
-    - pwd
     - cp docker/Dockerfile Dockerfile
     - cp .dockercfg ~/
     - cp local-config.php.dist local-config.php
