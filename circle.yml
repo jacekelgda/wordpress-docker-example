@@ -7,10 +7,7 @@ machine:
     - docker
 
 dependencies:
-  pre:
-    - echo 'pre'
   post:
-    - echo 'post change'
     - cp docker/Dockerfile Dockerfile
     - cp .dockercfg ~/
     - cp local-config.php.dist local-config.php
